@@ -1,0 +1,24 @@
+<template>
+  <div class="board">
+    <div class="row">
+      <div class="col-md">
+        <task-lane id="todo" title="To-Do" :items="todoItems"></task-lane>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { mapState } from 'vuex';
+import TaskLane from './TaskLane';
+
+export default {
+  name: 'KanbanBoard',
+  components: {
+    'task-lane': TaskLane,
+  },
+  computed: mapState({
+    todoItems: s => s.items.todo,
+  }),
+};
+</script>

@@ -4,13 +4,19 @@
       <h1>Action Points App</h1>
       <p class="lead">Kanban Board in Vue.js bc Ember made me cry</p>
     </div>
+    <menu-bar></menu-bar>
     <router-view/>
   </div>
 </template>
 
 <script>
+import MenuBar from '@/components/MenuBar';
+
 export default {
   name: 'App',
+  components: {
+    'menu-bar': MenuBar
+  }
 };
 </script>
 
