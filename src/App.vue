@@ -15,8 +15,8 @@ import MenuBar from '@/components/MenuBar';
 export default {
   name: 'App',
   components: {
-    'menu-bar': MenuBar
-  }
+    'menu-bar': MenuBar,
+  },
 };
 </script>
 

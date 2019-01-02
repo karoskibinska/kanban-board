@@ -15,7 +15,7 @@ export default {
     };
   },
   methods: {
-    submitForm(){
+    submitForm() {
       if (this.itemText) {
         this.$store.commit('addItem', {
           text: this.itemText,
@@ -31,7 +31,8 @@ export default {
 .add-item input {
   outline: none;
   border: 0;
-  border-bottom: 1px solid rgba(255, 1, 1, 0.5);
+  border-bottom: 1px solid rgba(255, 1, 1, 0.3);
+  margin-bottom: 10px;
   width: 100%;
   transition: all 0.25s;
   background: inherit;

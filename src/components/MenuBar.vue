@@ -15,10 +15,10 @@ export default {
       return {
         btn: true,
         'btn-primary': this.$route.path === path,
-        'btn-secondary': this.$route.path !== path
+        'btn-secondary': this.$route.path !== path,
       };
-    }
-  }
+    },
+  },
 };
 </script>
 
