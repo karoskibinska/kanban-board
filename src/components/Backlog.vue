@@ -18,7 +18,7 @@ import NewItem from './NewItem';
 const badgeDetail = {
   todo: {
     text: 'todo',
-    class: 'badge badge-light',
+    class: 'badge badge-dark',
   },
   inProgress: {
     text: 'in progress',

@@ -23,6 +23,7 @@ export default {
 <style>
   .page-header h1 {
     font-weight: 300;
+    margin-top: 30px;
   }
 
   .card {
