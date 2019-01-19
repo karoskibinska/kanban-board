@@ -12,6 +12,10 @@ new Vue({
   el: '#app',
   router,
   store,
-  components: { App },
   template: '<App/>',
+  components: { App },
+
+  created() {
+    store.commit('initializeStore');
+  },
 });
